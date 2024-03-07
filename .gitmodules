@@ -1,0 +1,3 @@
+[submodule "home-modular-mobile"]
+	path = home-modular-mobile
+	url = git@github.com:antoniovuono/home-modular-mobile.git
