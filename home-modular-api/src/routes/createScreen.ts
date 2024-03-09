@@ -38,4 +38,28 @@ export const createSceenRoutes = async (app: FastifyInstance) => {
 
     return reply.status(201).send(screens)
   })
+
+  app.get('/screen1', async (request: FastifyRequest, reply: FastifyReply) => {
+    const screen = await knex('screens').where({ name: 'screen1' }).first()
+
+    return reply.status(201).send(screen)
+  })
+
+  app.get('/screen2', async (request: FastifyRequest, reply: FastifyReply) => {
+    const screen = await knex('screens').where({ name: 'screen2' }).first()
+
+    return reply.status(201).send(screen)
+  })
+
+  app.get('/screen3', async (request: FastifyRequest, reply: FastifyReply) => {
+    const screen = await knex('screens').where({ name: 'screen3' }).first()
+
+    return reply.status(201).send(screen)
+  })
+
+  app.get('/screen4', async (request: FastifyRequest, reply: FastifyReply) => {
+    const screen = await knex('screens').where({ name: 'screen4' }).first()
+
+    return reply.status(201).send(screen)
+  })
 }
